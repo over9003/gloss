@@ -12,8 +12,8 @@ app.get("/", function(request, response) {
 
 app.post("/", function(request, response) {
   var userName = request.body.name;
-  response.send(`Your name is: <h1 style="color: red;">\
-    ${userName.toUpperCase()}</h1> and you are fabulous`)
+  response.send(`<p>Your name is: <h1 style="color: red;">\
+    ${userName.toUpperCase()}</h1> and you are fabulous</p><a href="/">Refresh</a>`)
 })
 
 app.listen(80, function(request, response) {
